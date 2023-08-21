@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="instyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Overpass:wght@100&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <div class="box" id="box">
+    <div>
+      <div>
+        <picture>
+        <img src="illustration-sign-up-mobile.svg" class="im2">
+        <img src="illustration-sign-up-desktop.svg" width="425px" height="445px" alt="desktop" class="image">
+        </picture>
+      </div>
+          <h1><b>Stay updated!</b></h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+        <div>
+        <div class="img">
+          <img src="icon-list.svg" alt="tick">
+          <span>Product discovery and building what matters</span>
+        </div>
+        <div class="img">
+        <img src="icon-list.svg" alt="tick">
+        <span>Measuring to ensure updates are a success</span>
+        </div>
+        <div class="img">
+        <img src="icon-list.svg" alt="tick">
+        <span>And much more!</span>
+        </div>
+    <div>
+      <p><b>Email address</b></p><span id="invalid">Valid email required</span>
+        <input class="mail" type="email" id="gmail" placeholder="email@company.com">
+        <div>
+      <button type="submit" onclick="openBtn()">Subscribe to monthly newsletter</button>
+      <script src="index.js"></script>
+        </div>
+    </div>
+  </div>
+</div>
+<div id="thank">
+<div class="mess">
+  <img src="icon-success.svg" width="45px" height="45px" alt="success-tick">
+  <h1><b>Thanks for <br>subscribing!</b></h1>
+  <p>A confirmation email has been sent to <span id="mailOutput"></span>. 
+    Please open it and click the button inside to confirm your subscription.</p>
+    <script src="injav.js"></script>
+    <button type="submit" onclick="closeBtn()">Dismiss message</button>
+    <script src="index.js"></script>
+</div>
+</body>
